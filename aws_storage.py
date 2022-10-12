@@ -16,4 +16,4 @@ class AWSStorage:
         return self.s3_client.get_object(Bucket=bucket, Key=file_path)
 
     def write_data(self, bucket, file_path, body):
-        return self.s3_client.put_object(Bucket=bucket, Body=body, Key=file_path)
+        return self.s3_client.put_object(Bucket=bucket,  Key=file_path, Body=body)
